@@ -1,0 +1,6 @@
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\bin\Debug\GreetingApp.exe.config
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\bin\Debug\GreetingApp.exe
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\bin\Debug\GreetingApp.pdb
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\obj\Debug\GreetingApp.csprojResolveAssemblyReference.cache
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\obj\Debug\GreetingApp.exe
+D:\Training\Monotype-TDD-Jul-2014\Day-1\GreetingApp\GreetingApp\obj\Debug\GreetingApp.pdb

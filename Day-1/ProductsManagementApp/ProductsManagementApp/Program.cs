@@ -19,8 +19,7 @@ namespace ProductsManagementApp
             products.Add(new Product { Id = 102, Name = "den", Cost = 90, Units = 60 });
             products.Add(new Product { Id = 109, Name = "len", Cost = 40, Units = 10 });
             products.Add(new Product { Id = 104, Name = "zen", Cost = 80, Units = 50 });
-            products.Save();
-            Console.WriteLine("Products saved");
+            
             Console.WriteLine("Initial Product");
             for (int i = 0; i < products.Count; i++)
             {
@@ -29,9 +28,10 @@ namespace ProductsManagementApp
             Console.WriteLine();
             Console.WriteLine("After sorting by units");
             products.Sort(new CompareProductById());
-            for (int i = 0; i < products.Count; i++)
+            //for (int i = 0; i < products.Count; i++)
+            foreach(var product in products)
             {
-                Console.WriteLine(products[i]);
+                Console.WriteLine(product);
             }
 
             Console.WriteLine();
@@ -41,7 +41,23 @@ namespace ProductsManagementApp
             {
                 Console.WriteLine(products[i]);
             }
+            Console.WriteLine("Costly products");
+            //var costlyProducts = products.Filter(Program.IsCostlyProduct);
+            /*var costlyProducts = products.Filter(delegate(Product product)
+            {
+                return product.Cost > 50;
+            });*/
+            var costlyProducts = products.Filter((product) => product.Cost > 50);
+
+            for (int i = 0; i < costlyProducts.Count; i++)
+            {
+                Console.WriteLine(costlyProducts[i]);
+            }
             Console.ReadLine();
+        }
+
+        public static bool IsCostlyProduct(Product product){
+            return product.Cost > 50;
         }
     }
     public class Product
@@ -56,7 +72,7 @@ namespace ProductsManagementApp
         }
     }
 
-    public class ProductsCollection
+    public class ProductsCollection : IEnumerable, IEnumerator
     {
         private ArrayList _list = new ArrayList();
 
@@ -106,6 +122,67 @@ namespace ProductsManagementApp
                         _list[j] = temp;
                     }
                 }
+        }
+
+        public ProductsCollection Filter(IProductSpecification spec){
+            var result = new ProductsCollection();
+            for(var i=0;i<_list.Count;i++){
+                var p = (Product)_list[i];
+                if (spec.IsSatisfiedBy(p))
+                    result.Add(p);
+            }
+            return result;
+        }
+
+        public ProductsCollection Filter(ProductCriteriaDelegate productCriteria){
+            var result = new ProductsCollection();
+            for(var i=0;i<_list.Count;i++){
+                var p = (Product)_list[i];
+                if (productCriteria(p))
+                    result.Add(p);
+            }
+            return result;
+        }
+        private int _index = -1;
+        public object Current
+        {
+            get {
+                return _list[_index];
+            }
+        }
+
+        public bool MoveNext()
+        {
+            _index++;
+            if (_index >= _list.Count) {
+                Reset();
+                return false;
+            }
+            return true;
+
+        }
+
+        public void Reset()
+        {
+            _index = -1;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return this;
+        }
+    }
+
+    public interface IProductSpecification{
+        bool IsSatisfiedBy(Product product);
+    }
+
+    public delegate bool ProductCriteriaDelegate(Product product);
+
+    public class CostlyProductSpecification : IProductSpecification{
+        public bool IsSatisfiedBy(Product product)
+        {
+ 	        return product.Cost > 50;
         }
     }
 
