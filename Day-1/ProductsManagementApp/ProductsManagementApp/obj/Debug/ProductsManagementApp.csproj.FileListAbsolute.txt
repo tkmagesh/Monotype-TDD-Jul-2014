@@ -1,0 +1,6 @@
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\bin\Debug\ProductsManagementApp.exe.config
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\bin\Debug\ProductsManagementApp.exe
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\bin\Debug\ProductsManagementApp.pdb
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\obj\Debug\ProductsManagementApp.csprojResolveAssemblyReference.cache
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\obj\Debug\ProductsManagementApp.exe
+D:\Training\Monotype-TDD-Jul-2014\Day-1\ProductsManagementApp\ProductsManagementApp\obj\Debug\ProductsManagementApp.pdb
