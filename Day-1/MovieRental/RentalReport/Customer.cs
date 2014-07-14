@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace RentalReport
 {
@@ -34,21 +35,24 @@ namespace RentalReport
             return result;
         }
         public double GetTotalAmount() {
-            double totalAmount = 0;
-            foreach (var rental in _rentals)
-            {
-                totalAmount += rental.GetAmount();
-            }
-            return totalAmount;
+            return _rentals.Sum(r => r.GetAmount());
+            //double totalAmount = 0;
+            //foreach (var rental in _rentals)
+            //{
+            //    totalAmount += rental.GetAmount();
+            //}
+            //return totalAmount;
         }
         public int GetTotalFrequentRentalPoints()
         {
-            int frequentRentalPoints = 0;
-            foreach (var rental in _rentals)
-            {
-                frequentRentalPoints += rental.GetFrequentPoints();
-            }
-            return frequentRentalPoints;
+            //int frequentRentalPoints = 0;
+            //foreach (var rental in _rentals)
+            //{
+            //    frequentRentalPoints += rental.GetFrequentPoints();
+            //}
+            //return frequentRentalPoints;
+
+            return _rentals.Sum(r => r.GetFrequentPoints());
         }
     }
 }
