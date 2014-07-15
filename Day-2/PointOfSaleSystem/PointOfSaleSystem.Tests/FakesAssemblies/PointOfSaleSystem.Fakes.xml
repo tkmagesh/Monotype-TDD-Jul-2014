@@ -58,11 +58,17 @@
         <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.#ctor">
             <summary>Initializes a new instance of type StubISaleEventListener</summary>
         </member>
-        <member name="F:PointOfSaleSystem.Fakes.StubISaleEventListener.BeginSale">
-            <summary>Sets the stub of ISaleEventListener.BeginSale()</summary>
+        <member name="F:PointOfSaleSystem.Fakes.StubISaleEventListener.BeginSaleInt32">
+            <summary>Sets the stub of ISaleEventListener.BeginSale(Int32 id)</summary>
         </member>
-        <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.poss::PointOfSaleSystem#ISaleEventListener#BeginSale">
-            <summary>Sets the stub of ISaleEventListener.BeginSale()</summary>
+        <member name="F:PointOfSaleSystem.Fakes.StubISaleEventListener.GetId">
+            <summary>Sets the stub of ISaleEventListener.GetId()</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.poss::PointOfSaleSystem#ISaleEventListener#BeginSale(System.Int32)">
+            <summary>Sets the stub of ISaleEventListener.BeginSale(Int32 id)</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.poss::PointOfSaleSystem#ISaleEventListener#GetId">
+            <summary>Sets the stub of ISaleEventListener.GetId()</summary>
         </member>
     </members>
 </doc>

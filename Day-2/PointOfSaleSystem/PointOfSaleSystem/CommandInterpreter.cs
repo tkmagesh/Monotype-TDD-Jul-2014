@@ -17,7 +17,8 @@ namespace PointOfSaleSystem
 
         public void Parse(string command)
         {
-            _saleEventListener.BeginSale();
+            var id = _saleEventListener.GetId();
+            _saleEventListener.BeginSale(id + 1);
         }
     }
 }

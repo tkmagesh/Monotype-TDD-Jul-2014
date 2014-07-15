@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace PointOfSaleSystem.Tests
 {
@@ -13,15 +14,15 @@ namespace PointOfSaleSystem.Tests
         [TestInitialize]
         public void Setup()
         {
-            hasBeginSaleCalled = false;
-            saleEventListner = new PointOfSaleSystem.Fakes.StubISaleEventListener()
-            {
-                BeginSale = () =>
-                {
-                    hasBeginSaleCalled = true;
-                }
-            };
-            interpreter = new CommandInterpreter(saleEventListner);
+            //hasBeginSaleCalled = false;
+            //saleEventListner = new PointOfSaleSystem.Fakes.StubISaleEventListener()
+            //{
+            //    BeginSale = (arg) =>
+            //    {
+            //        hasBeginSaleCalled = true;
+            //    }
+            //};
+            //interpreter = new CommandInterpreter(saleEventListner);
 
         }
         [TestMethod]
@@ -29,14 +30,18 @@ namespace PointOfSaleSystem.Tests
         {
             //Arrange
             var beginSaleCommand = "command:BeginSale";
-                     
+            var mockery = new Mock<ISaleEventListener>();
+            mockery.Setup(el => el.GetId()).Returns(123);
+            var interpreter = new CommandInterpreter(mockery.Object);
 
             //Act
+           
             interpreter.Parse(beginSaleCommand);
 
             //Assert
             //Assert that the saleEventListener has received a command to commence a sale
-            Assert.IsTrue(hasBeginSaleCalled);
+            //Assert.IsTrue(hasBeginSaleCalled);
+            mockery.Verify(el => el.BeginSale(123), Times.Once);
         }
     }
 }

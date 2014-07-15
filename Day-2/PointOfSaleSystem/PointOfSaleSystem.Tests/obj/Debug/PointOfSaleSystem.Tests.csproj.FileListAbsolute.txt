@@ -26,4 +26,6 @@ D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Test
 D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\obj\Debug\Fakes\poss\o\PointOfSaleSystem.Fakes.pdb
 D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\bin\Debug\PointOfSaleSystem.Fakes.dll
 D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\bin\Debug\PointOfSaleSystem.Fakes.xml
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\bin\Debug\Moq.dll
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\bin\Debug\Moq.xml
 D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem.Tests\bin\Debug\PointOfSaleSystem.Fakes.fakesconfig

@@ -8,6 +8,7 @@ namespace PointOfSaleSystem
 {
     public interface ISaleEventListener
     {
-        void BeginSale();
+        void BeginSale(int id);
+        int GetId();
     }
 }
