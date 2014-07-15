@@ -1,0 +1,5 @@
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem\bin\Debug\PointOfSaleSystem.dll
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem\bin\Debug\PointOfSaleSystem.pdb
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem\obj\Debug\PointOfSaleSystem.csprojResolveAssemblyReference.cache
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem\obj\Debug\PointOfSaleSystem.dll
+D:\Training\Monotype-TDD-Jul-2014\Day-2\PointOfSaleSystem\PointOfSaleSystem\obj\Debug\PointOfSaleSystem.pdb

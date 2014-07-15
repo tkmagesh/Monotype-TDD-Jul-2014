@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PointOfSaleSystem.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:PointOfSaleSystem.Fakes.ShimCommandInterpreter">
+            <summary>Shim type of PointOfSaleSystem.CommandInterpreter</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.ShimCommandInterpreter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.ShimCommandInterpreter.#ctor(PointOfSaleSystem.CommandInterpreter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.ShimCommandInterpreter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.ShimCommandInterpreter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.ShimCommandInterpreter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.ShimCommandInterpreter.ConstructorISaleEventListener">
+            <summary>Sets the shim of CommandInterpreter.CommandInterpreter(ISaleEventListener saleEventListener)</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.ShimCommandInterpreter.ParseString">
+            <summary>Sets the shim of CommandInterpreter.Parse(String command)</summary>
+        </member>
+        <member name="T:PointOfSaleSystem.Fakes.ShimCommandInterpreter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.ShimCommandInterpreter.AllInstances.ParseString">
+            <summary>Sets the shim of CommandInterpreter.Parse(String command)</summary>
+        </member>
+        <member name="T:PointOfSaleSystem.Fakes.StubCommandInterpreter">
+            <summary>Stub type of PointOfSaleSystem.CommandInterpreter</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubCommandInterpreter.#ctor(PointOfSaleSystem.ISaleEventListener)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubCommandInterpreter.InitializeStub">
+            <summary>Initializes a new instance of type StubCommandInterpreter</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.StubCommandInterpreter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.StubCommandInterpreter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:PointOfSaleSystem.Fakes.StubCommandInterpreter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:PointOfSaleSystem.Fakes.StubISaleEventListener">
+            <summary>Stub type of PointOfSaleSystem.ISaleEventListener</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.#ctor">
+            <summary>Initializes a new instance of type StubISaleEventListener</summary>
+        </member>
+        <member name="F:PointOfSaleSystem.Fakes.StubISaleEventListener.BeginSale">
+            <summary>Sets the stub of ISaleEventListener.BeginSale()</summary>
+        </member>
+        <member name="M:PointOfSaleSystem.Fakes.StubISaleEventListener.poss::PointOfSaleSystem#ISaleEventListener#BeginSale">
+            <summary>Sets the stub of ISaleEventListener.BeginSale()</summary>
+        </member>
+    </members>
+</doc>
